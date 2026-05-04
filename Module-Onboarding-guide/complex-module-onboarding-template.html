@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>__MODULE__ complex onboarding</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 24px; }
+    h1, h2, h3 { color: #1f2937; }
+    nav { margin-bottom: 24px; padding: 12px 16px; background: #f8fafc; border: 1px solid #d1d5db; border-radius: 8px; }
+    nav a { margin-right: 16px; color: #2563eb; text-decoration: none; }
+    section { margin-bottom: 32px; }
+    pre { background: #f5f7fb; padding: 12px; overflow-x: auto; }
+    .box { border: 1px solid #d1d5db; padding: 18px; border-radius: 8px; background: #ffffff; }
+    .table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    .table th, .table td { padding: 10px; border: 1px solid #d1d5db; text-align: left; }
+    .example { background: #eef2ff; padding: 14px; margin-top: 12px; border-radius: 8px; }
+    .edge-case { background: #fffbeb; padding: 14px; margin-top: 12px; border-radius: 8px; }
+    .section-title { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <h1>__MODULE__ complex onboarding</h1>
+  <nav>
+    <a href="#module-map">Module map</a>
+    <a href="#submodules">Submodules</a>
+    <a href="#workflows">Workflows</a>
+    <a href="#branch-comparison">Branch comparison</a>
+    <a href="#workflow-examples">Workflow examples</a>
+    <a href="#impact-map">Impact map</a>
+    <a href="#starting-point">Start here</a>
+    <a href="#recommendations">Recommendations</a>
+  </nav>
+
+  <section id="module-map">
+    <h2 class="section-title">1. Module map</h2>
+    <div class="box">
+      <p>Root module and nested submodules.</p>
+      <pre>MODULE TREE HERE</pre>
+    </div>
+  </section>
+
+  <section id="submodules">
+    <h2 class="section-title">2. Submodules and workflow branches</h2>
+    <div class="box">
+      <p>List of submodules, workflows, and branch names.</p>
+      <pre>SUBMODULES + BRANCHES HERE</pre>
+    </div>
+  </section>
+
+  <section id="workflows">
+    <h2 class="section-title">3. Main workflows</h2>
+    <div class="box">
+      <p>Business logic for each workflow branch, including triggers and outputs.</p>
+      <pre>WORKFLOW DETAILS HERE</pre>
+    </div>
+  </section>
+
+  <section id="branch-comparison">
+    <h2 class="section-title">4. Branch comparison</h2>
+    <div class="box">
+      <p>Comparison of frontbook vs backbook behavior and branch-specific differences.</p>
+      <pre>BRANCH COMPARISON HERE</pre>
+    </div>
+  </section>
+
+  <section id="workflow-examples">
+    <h2 class="section-title">5. Workflow examples</h2>
+    <div class="box">
+      <p>Concrete workflow examples with sample objects, numeric values, and edge cases.</p>
+      <div class="example">
+        <h3>Example workflow object</h3>
+        <pre>{
+  "workflow": "eve",
+  "transaction_type": "frontbook",
+  "amount": 12500,
+  "currency": "PLN",
+  "source": "cash_flow_engine/eve",
+  "status": "pending"
+}</pre>
+        <p>Example numeric flow:</p>
+        <table class="table">
+          <thead>
+            <tr><th>Step</th><th>Input</th><th>Output</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Load</td><td>12500 PLN</td><td>transaction record</td></tr>
+            <tr><td>Transform</td><td>frontbook allocation</td><td>adjusted cash position</td></tr>
+            <tr><td>Write</td><td>cash output</td><td>updated ledger entry</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="edge-case">
+        <h3>Edge case</h3>
+        <p>If the transaction is frontbook but missing a required counterparty ID, the workflow should skip validation or route to error handling. This is a real example of branch-specific behavior that should be surfaced.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="impact-map">
+    <h2 class="section-title">6. Impact map</h2>
+    <div class="box">
+      <p>Key files and areas affected by changes in each branch.</p>
+      <pre>IMPACT ZONES HERE</pre>
+    </div>
+  </section>
+
+  <section id="starting-point">
+    <h2 class="section-title">7. Where to start</h2>
+    <div class="box">
+      <p>Recommended first files, classes, and workflows for the selected change.</p>
+      <pre>STARTING POINTS HERE</pre>
+    </div>
+  </section>
+
+  <section id="recommendations">
+    <h2 class="section-title">8. Recommendations</h2>
+    <div class="box">
+      <p>Practical next steps, likely risks, and what to check first.</p>
+      <pre>RECOMMENDATIONS HERE</pre>
+    </div>
+  </section>
+</body>
+</html>

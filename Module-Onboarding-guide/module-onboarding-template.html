@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{MODULE_NAME} onboarding</title>
+  <style>
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      padding: 0;
+      color: #1f2937;
+      background: #f7f8fb;
+    }
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 32px;
+    }
+    h1, h2, h3, h4, h5 {
+      color: #111827;
+      margin-top: 1.6em;
+      margin-bottom: 0.8em;
+    }
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.25rem; }
+    p, li {
+      color: #374151;
+      margin: 0.65em 0;
+    }
+    nav {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+      padding: 18px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+    }
+    nav a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.04);
+    }
+    .edge-case {
+      background: #f8fafc;
+      border: 1px solid #dbeafe;
+      padding: 18px;
+      border-radius: 14px;
+      margin-top: 18px;
+    }
+    .edge-case h5 {
+      margin-top: 0.5em;
+    }
+    .summary-grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 20px;
+    }
+    .summary-card {
+      padding: 18px;
+      border-radius: 16px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      color: #111827;
+      background: #f8fafc;
+      font-weight: 600;
+    }
+    .workflow-card {
+      padding: 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      margin-top: 18px;
+    }
+    .workflow-card a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .workflow-card a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      background: #e0f2fe;
+      border-left: 4px solid #38bdf8;
+      padding: 16px 18px;
+      border-radius: 12px;
+      margin: 24px 0;
+    }
+    .diagram {
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 18px;
+      background: #f8fafc;
+      border: 1px solid #dbeafe;
+    }
+    .diagram svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>{MODULE_NAME} onboarding</h1>
+    </header>
+
+    <nav class="card">
+      <strong>Quick links</strong>
+      <ul>
+        <li><a href="#overview">Module Overview</a></li>
+        <li><a href="#key-components">Key Components</a></li>
+        <li><a href="#business-logic">Business Logic</a></li>
+        <li><a href="#main-workflows">Main Workflows</a></li>
+        <li><a href="#deep-workflows">Detailed Workflow Pages</a></li>
+        <li><a href="#starting-point">Where to Start</a></li>
+      </ul>
+    </nav>
+
+    <section id="overview" class="card">
+      <h2>Module Overview</h2>
+      <p>[Bird's eye view of the module: what it does, why it exists, and who uses it]</p>
+    </section>
+
+    <section id="key-components" class="card">
+      <h2>Key Components</h2>
+      <div class="summary-grid">
+        <div class="summary-card">
+          <h3>Entry Point</h3>
+          <p>[Main file/function to start from]</p>
+        </div>
+        <div class="summary-card">
+          <h3>Core Classes / Entities</h3>
+          <p>[Main domain objects and responsibilities]</p>
+        </div>
+        <div class="summary-card">
+          <h3>Dependencies</h3>
+          <p>[External systems, important modules, data sources]</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="business-logic" class="card">
+      <h2>Business Logic</h2>
+      <p>[Explain the core business problem and how this module solves it]</p>
+    </section>
+
+    <section id="main-workflows" class="card">
+      <h2>Main Workflows</h2>
+      <p>[Summary of main workflows and their outcomes]</p>
+      <div class="workflow-card">
+        <a href="#workflow-1">1. [Workflow Name]</a>
+        <p>[Trigger] → [Steps] → [Outcome]</p>
+      </div>
+      <div class="workflow-card">
+        <a href="#workflow-2">2. [Workflow Name]</a>
+        <p>[Trigger] → [Steps] → [Outcome]</p>
+      </div>
+      <div class="workflow-card">
+        <a href="#workflow-3">3. [Workflow Name]</a>
+        <p>[Trigger] → [Steps] → [Outcome]</p>
+      </div>
+    </section>
+
+    <section id="workflow-diagram" class="card">
+      <h2>Workflow Diagram</h2>
+      <p>[A simple visual summary of the main module flow]</p>
+      <div class="diagram">
+        <svg viewBox="0 0 760 220" role="img" aria-label="Workflow diagram">
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb" />
+            </marker>
+          </defs>
+          <rect x="30" y="50" width="180" height="90" rx="18" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+          <text x="120" y="96" text-anchor="middle" font-size="16" fill="#111827">Input data</text>
+          <text x="120" y="118" text-anchor="middle" font-size="12" fill="#475569">emails, chats, files</text>
+          <rect x="290" y="30" width="180" height="90" rx="18" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+          <text x="380" y="70" text-anchor="middle" font-size="16" fill="#111827">Processing</text>
+          <text x="380" y="92" text-anchor="middle" font-size="12" fill="#475569">classification, mapping, export</text>
+          <rect x="550" y="50" width="180" height="90" rx="18" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+          <text x="640" y="96" text-anchor="middle" font-size="16" fill="#111827">Output</text>
+          <text x="640" y="118" text-anchor="middle" font-size="12" fill="#475569">tickets, reports, analysis</text>
+          <line x1="210" y1="95" x2="290" y2="95" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)" />
+          <line x1="470" y1="95" x2="550" y2="95" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)" />
+        </svg>
+      </div>
+    </section>
+
+    <section id="deep-workflows" class="card">
+      <h2>Detailed Workflow Pages</h2>
+      <article id="workflow-1" class="workflow-card">
+        <h3>Workflow 1 — [Name]</h3>
+        <p><strong>Trigger:</strong> [What starts this workflow]</p>
+        <p><strong>Outcome:</strong> [What it produces]</p>
+        <h4>Pure Logic</h4>
+        <p>[Explain what is created, transformed, and validated]</p>
+        <h4>Minimal Example</h4>
+        <table>
+          <thead>
+            <tr><th>Object</th><th>Example</th><th>Role</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>[Object A]</td><td>[Sample shape]</td><td>[What it represents]</td></tr>
+            <tr><td>[Object B]</td><td>[Sample shape]</td><td>[What changes here]</td></tr>
+          </tbody>
+        </table>
+        <h4>Step-by-step Flow</h4>
+        <ol>
+          <li>[Step 1]</li>
+          <li>[Step 2]</li>
+          <li>[Step 3]</li>
+        </ol>
+        <div class="edge-case">
+          <h4>Edge Cases</h4>
+          <p>[Describe common or important edge cases for this workflow]</p>
+          <h5>Example Edge Case</h5>
+          <p>[One concrete edge case, what triggers it, and how the workflow behaves]</p>
+        </div>
+      </article>
+      <article id="workflow-2" class="workflow-card">
+        <h3>Workflow 2 — [Name]</h3>
+        <p><strong>Trigger:</strong> [What starts this workflow]</p>
+        <p><strong>Outcome:</strong> [What it produces]</p>
+        <h4>Pure Logic</h4>
+        <p>[Explain what is created, transformed, and validated]</p>
+        <h4>Minimal Example</h4>
+        <table>
+          <thead>
+            <tr><th>Object</th><th>Example</th><th>Role</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>[Object A]</td><td>[Sample shape]</td><td>[What it represents]</td></tr>
+          </tbody>
+        </table>
+        <h4>Step-by-step Flow</h4>
+        <ol>
+          <li>[Step 1]</li>
+          <li>[Step 2]</li>
+        </ol>
+        <div class="edge-case">
+          <h4>Edge Cases</h4>
+          <p>[Describe common or important edge cases for this workflow]</p>
+          <h5>Example Edge Case</h5>
+          <p>[One concrete edge case, what triggers it, and how the workflow behaves]</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="starting-point" class="card">
+      <h2>Where to Start</h2>
+      <ol>
+        <li>Open: <strong>[First file / entry point]</strong></li>
+        <li>Then review: <strong>[Next file / component]</strong></li>
+        <li>Key concept: <strong>[Critical idea to understand first]</strong></li>
+      </ol>
+      <div class="note">
+        <strong>Note:</strong> This page is meant for a new analyst: focus on what changes, what flows, and where to look first.
+      </div>
+    </section>
+
+    <footer>
+      Generated by Module Onboarding Guide
+    </footer>
+  </div>
+</body>
+</html>
